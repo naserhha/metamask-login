@@ -1,0 +1,475 @@
+# Copyright (C) 2023 Your Name
+# This file is distributed under the same license as the MetaMask Login plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaMask Login\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-15 12:00+0000\n"
+"PO-Revision-Date: 2024-03-15 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#. Plugin Name of the plugin
+msgid "MetaMask Login"
+msgstr "ورود با متامسک"
+
+#. Plugin URI of the plugin
+msgid "https://example.com/metamask-login"
+msgstr "https://example.com/metamask-login"
+
+#. Description of the plugin
+msgid "Login to WordPress using MetaMask or other Web3 wallets with admin wallet access control. Supports RTL and Persian language."
+msgstr "ورود به وردپرس با استفاده از متامسک یا کیف پول‌های وب۳ دیگر با کنترل دسترسی کیف پول مدیر. پشتیبانی از RTL و زبان فارسی."
+
+#. Author of the plugin
+msgid "Your Name"
+msgstr "نام شما"
+
+#. Author URI of the plugin
+msgid "https://example.com"
+msgstr "https://example.com"
+
+#: metamask-login.php:45
+msgid "Login with MetaMask"
+msgstr "ورود با متامسک"
+
+#: metamask-login.php:46
+msgid "Connecting..."
+msgstr "در حال اتصال..."
+
+#: metamask-login.php:47
+msgid "Please sign the message..."
+msgstr "لطفاً پیام را امضا کنید..."
+
+#: metamask-login.php:48
+msgid "Error"
+msgstr "خطا"
+
+#: metamask-login.php:49
+msgid "No Web3 wallet detected. Please install MetaMask."
+msgstr "کیف پول Web3 یافت نشد. لطفاً متامسک را نصب کنید."
+
+#: includes/admin-settings.php:13
+msgid "MetaMask Login Settings"
+msgstr "تنظیمات ورود متامسک"
+
+#: includes/admin-settings.php:14
+msgid "MetaMask Login"
+msgstr "ورود متامسک"
+
+#: includes/admin-settings.php:46
+msgid "Settings Saved"
+msgstr "تنظیمات ذخیره شد"
+
+#: includes/admin-settings.php:57
+msgid "Enter Ethereum wallet addresses that should have administrator access. One address per line."
+msgstr "آدرس کیف پول‌های اتریوم که باید دسترسی مدیر داشته باشند را وارد کنید. هر آدرس در یک خط."
+
+#: includes/admin-settings.php:67
+msgid "Admin Wallet Addresses"
+msgstr "آدرس کیف پول‌های مدیر"
+
+#: includes/admin-settings.php:76
+msgid "Enter one Ethereum wallet address per line (format: 0x...)"
+msgstr "در هر خط یک آدرس کیف پول اتریوم وارد کنید (فرمت: ...0x)"
+
+#: includes/admin-settings.php:81
+msgid "Default User Role"
+msgstr "نقش کاربری پیش‌فرض"
+
+#: includes/admin-settings.php:92
+msgid "Role assigned to new users logging in with MetaMask (if not in admin list)"
+msgstr "نقش اختصاص داده شده به کاربران جدیدی که با متامسک وارد می‌شوند (اگر در لیست مدیر نباشند)"
+
+#: includes/admin-settings.php:96
+msgid "Save Settings"
+msgstr "ذخیره تنظیمات"
+
+#: includes/auth-functions.php:19
+#: includes/auth-functions.php:66
+msgid "Sign this message to authenticate with %s: %s"
+msgstr "این پیام را برای احراز هویت با %s امضا کنید: %s"
+
+#: includes/auth-functions.php:54
+msgid "Invalid wallet address format"
+msgstr "فرمت آدرس کیف پول نامعتبر است"
+
+#: includes/auth-functions.php:63
+msgid "Authentication failed: No nonce found"
+msgstr "احراز هویت ناموفق: کد یکبار مصرف یافت نشد"
+
+#: includes/auth-functions.php:70
+msgid "Authentication failed: Nonce mismatch"
+msgstr "احراز هویت ناموفق: عدم تطابق کد یکبار مصرف"
+
+#: includes/auth-functions.php:92
+msgid "Authentication successful. Redirecting..."
+msgstr "احراز هویت موفق. در حال هدایت..."
+
+#: includes/auth-functions.php:140
+msgid "MetaMask User %s"
+msgstr "کاربر متامسک %s"
+
+#: includes/admin-settings.php:17
+msgid "MetaMask Users"
+msgstr "کاربران متامسک"
+
+#: includes/admin-settings.php:18
+msgid "Users Management"
+msgstr "مدیریت کاربران"
+
+#: includes/admin-settings.php:67
+msgid "Role for user %s updated to %s."
+msgstr "نقش برای کاربر %s به %s بروزرسانی شد."
+
+#: includes/admin-settings.php:89
+msgid "Manage users who have logged in with MetaMask. You can change their role from this page."
+msgstr "مدیریت کاربرانی که با متامسک وارد شده‌اند. می‌توانید نقش آن‌ها را از این صفحه تغییر دهید."
+
+#: includes/admin-settings.php:95
+msgid "Username"
+msgstr "نام کاربری"
+
+#: includes/admin-settings.php:96
+msgid "Display Name"
+msgstr "نام نمایشی"
+
+#: includes/admin-settings.php:97
+msgid "Wallet Address"
+msgstr "آدرس کیف پول"
+
+#: includes/admin-settings.php:98
+msgid "Current Role"
+msgstr "نقش فعلی"
+
+#: includes/admin-settings.php:99
+msgid "Actions"
+msgstr "عملیات‌ها"
+
+#: includes/admin-settings.php:105
+msgid "No users have logged in with MetaMask yet."
+msgstr "هنوز هیچ کاربری با متامسک وارد نشده است."
+
+#: includes/admin-settings.php:126
+msgid "Change Role"
+msgstr "تغییر نقش"
+
+#: includes/auth-functions.php:13
+msgid "Blockchain Dashboard"
+msgstr "داشبورد بلاکچین"
+
+#: includes/user-dashboard.php:20
+msgid "You must be logged in to view this dashboard."
+msgstr "برای مشاهده این داشبورد باید وارد شوید."
+
+#: includes/user-dashboard.php:33
+msgid "No wallet address found for your account."
+msgstr "هیچ آدرس کیف پولی برای حساب شما یافت نشد."
+
+#: includes/user-dashboard.php:42
+msgid "Welcome, %s"
+msgstr "خوش آمدید، %s"
+
+#: includes/user-dashboard.php:45
+msgid "Your Wallet"
+msgstr "کیف پول شما"
+
+#: includes/user-dashboard.php:47
+msgid "Wallet Address:"
+msgstr "آدرس کیف پول:"
+
+#: includes/user-dashboard.php:53
+msgid "Blockchain Information"
+msgstr "اطلاعات بلاکچین"
+
+#: includes/user-dashboard.php:55
+msgid "Loading blockchain data..."
+msgstr "در حال بارگیری اطلاعات بلاکچین..."
+
+#: includes/user-dashboard.php:59
+msgid "Network:"
+msgstr "شبکه:"
+
+#: includes/user-dashboard.php:63
+msgid "ETH Balance:"
+msgstr "موجودی اتریوم:"
+
+#: includes/user-dashboard.php:68
+msgid "Recent Transactions:"
+msgstr "تراکنش‌های اخیر:"
+
+#: includes/user-dashboard.php:93
+msgid "View"
+msgstr "مشاهده"
+
+#: includes/user-dashboard.php:117
+msgid "Error fetching blockchain data. Please make sure your wallet is connected."
+msgstr "خطا در دریافت اطلاعات بلاکچین. لطفاً مطمئن شوید که کیف پول شما متصل است."
+
+#: includes/user-dashboard.php:125
+msgid "MetaMask or ethers.js not detected. Please install MetaMask and refresh the page."
+msgstr "متامسک یا ethers.js پیدا نشد. لطفاً متامسک را نصب کرده و صفحه را بارگذاری مجدد کنید."
+
+#: metamask-login.php:47
+msgid "ورود با دنیای بلاکچین توسط متامسک"
+msgstr "ورود با دنیای بلاکچین توسط متامسک"
+
+msgid "Connect your Web3 wallet to login"
+msgstr "برای ورود، کیف پول Web3 خود را متصل کنید"
+
+msgid "User Dashboard"
+msgstr "داشبورد کاربری"
+
+msgid "Profile"
+msgstr "پروفایل"
+
+msgid "Security"
+msgstr "امنیت"
+
+msgid "Privacy"
+msgstr "حریم خصوصی"
+
+msgid "Activity"
+msgstr "فعالیت‌ها"
+
+msgid "Statistics"
+msgstr "آمار"
+
+msgid "Phone Number"
+msgstr "شماره تلفن"
+
+msgid "Email Address"
+msgstr "آدرس ایمیل"
+
+msgid "Update Profile"
+msgstr "به‌روزرسانی پروفایل"
+
+msgid "Security Settings"
+msgstr "تنظیمات امنیتی"
+
+msgid "Password"
+msgstr "رمز عبور"
+
+msgid "Change Password"
+msgstr "تغییر رمز عبور"
+
+msgid "Two-Factor Authentication"
+msgstr "احراز هویت دو مرحله‌ای"
+
+msgid "Enabled"
+msgstr "فعال"
+
+msgid "Disabled"
+msgstr "غیرفعال"
+
+msgid "Blockchain Authentication"
+msgstr "احراز هویت بلاکچین"
+
+msgid "Connected Wallet:"
+msgstr "کیف پول متصل:"
+
+msgid "Disconnect"
+msgstr "قطع اتصال"
+
+msgid "Privacy Settings"
+msgstr "تنظیمات حریم خصوصی"
+
+msgid "Show email to other users"
+msgstr "نمایش ایمیل به سایر کاربران"
+
+msgid "Show phone number to other users"
+msgstr "نمایش شماره تلفن به سایر کاربران"
+
+msgid "Show activity history to other users"
+msgstr "نمایش تاریخچه فعالیت به سایر کاربران"
+
+msgid "Save Privacy Settings"
+msgstr "ذخیره تنظیمات حریم خصوصی"
+
+msgid "Activity History"
+msgstr "تاریخچه فعالیت‌ها"
+
+msgid "All Activities"
+msgstr "همه فعالیت‌ها"
+
+msgid "Logins"
+msgstr "ورودها"
+
+msgid "Profile Updates"
+msgstr "به‌روزرسانی‌های پروفایل"
+
+msgid "Security Changes"
+msgstr "تغییرات امنیتی"
+
+msgid "Last 7 Days"
+msgstr "۷ روز گذشته"
+
+msgid "Last 30 Days"
+msgstr "۳۰ روز گذشته"
+
+msgid "Last 90 Days"
+msgstr "۹۰ روز گذشته"
+
+msgid "No activity history available."
+msgstr "هیچ تاریخچه فعالیتی موجود نیست."
+
+msgid "Views"
+msgstr "بازدیدها"
+
+msgid "Revenue"
+msgstr "درآمد"
+
+msgid "Orders"
+msgstr "سفارش‌ها"
+
+msgid "Customers"
+msgstr "مشتریان"
+
+msgid "Sales"
+msgstr "فروش"
+
+msgid "Marketing"
+msgstr "بازاریابی"
+
+msgid "Products"
+msgstr "محصولات"
+
+msgid "Reports"
+msgstr "گزارش‌ها"
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Activity Chart"
+msgstr "نمودار فعالیت"
+
+msgid "User Activity"
+msgstr "فعالیت کاربر"
+
+msgid "Farvardin"
+msgstr "فروردین"
+
+msgid "Ordibehesht"
+msgstr "اردیبهشت"
+
+msgid "Khordad"
+msgstr "خرداد"
+
+msgid "Tir"
+msgstr "تیر"
+
+msgid "Mordad"
+msgstr "مرداد"
+
+msgid "Shahrivar"
+msgstr "شهریور"
+
+msgid "MetaMask Settings"
+msgstr "تنظیمات متامسک"
+
+msgid "Login Button Text"
+msgstr "متن دکمه ورود"
+
+msgid "This text appears below the MetaMask login button."
+msgstr "این متن در زیر دکمه ورود با متامسک نمایش داده می‌شود."
+
+msgid "Shortcode Documentation"
+msgstr "راهنمای شورت‌کدها"
+
+msgid "User Dashboard Shortcode"
+msgstr "شورت‌کد داشبورد کاربری"
+
+msgid "This shortcode displays the complete user dashboard with the following features:"
+msgstr "این شورت‌کد داشبورد کامل کاربری را نمایش می‌دهد که شامل موارد زیر است:"
+
+msgid "User profile and information editing"
+msgstr "پروفایل کاربر و ویرایش اطلاعات"
+
+msgid "Security settings and two-factor authentication"
+msgstr "تنظیمات امنیتی و احراز هویت دو مرحله‌ای"
+
+msgid "Privacy settings"
+msgstr "تنظیمات حریم خصوصی"
+
+msgid "Activity history"
+msgstr "تاریخچه فعالیت‌ها"
+
+msgid "Statistics and charts"
+msgstr "آمار و نمودارها"
+
+msgid "Usage Example:"
+msgstr "مثال استفاده:"
+
+msgid "Wallet Connect Button Shortcode"
+msgstr "شورت‌کد دکمه اتصال کیف پول"
+
+msgid "This shortcode displays a button to connect MetaMask wallet."
+msgstr "این شورت‌کد یک دکمه برای اتصال کیف پول متامسک نمایش می‌دهد."
+
+msgid "Parameters:"
+msgstr "پارامترها:"
+
+msgid "Button text (default: \"Connect Wallet\")"
+msgstr "متن دکمه (پیش‌فرض: \"اتصال به کیف پول\")"
+
+msgid "Additional CSS class"
+msgstr "کلاس CSS اضافی"
+
+msgid "Wallet Address Display Shortcode"
+msgstr "شورت‌کد نمایش آدرس کیف پول"
+
+msgid "This shortcode displays the user's connected wallet address."
+msgstr "این شورت‌کد آدرس کیف پول متصل شده کاربر را نمایش می‌دهد."
+
+msgid "Show copy button (true/false)"
+msgstr "نمایش دکمه کپی (true/false)"
+
+msgid "Show balance (true/false)"
+msgstr "نمایش موجودی (true/false)"
+
+msgid "Profile Form Shortcode"
+msgstr "شورت‌کد فرم پروفایل"
+
+msgid "This shortcode displays the user profile editing form."
+msgstr "این شورت‌کد فرم ویرایش پروفایل کاربر را نمایش می‌دهد."
+
+msgid "Show wallet section (true/false)"
+msgstr "نمایش بخش کیف پول (true/false)"
+
+msgid "Show avatar (true/false)"
+msgstr "نمایش آواتار (true/false)"
+
+msgid "Activity Log Shortcode"
+msgstr "شورت‌کد تاریخچه فعالیت‌ها"
+
+msgid "This shortcode displays the user's activity history."
+msgstr "این شورت‌کد تاریخچه فعالیت‌های کاربر را نمایش می‌دهد."
+
+msgid "Number of items (default: 10)"
+msgstr "تعداد موارد (پیش‌فرض: 10)"
+
+msgid "Show filters (true/false)"
+msgstr "نمایش فیلترها (true/false)"
+
+msgid "Activity Chart Shortcode"
+msgstr "شورت‌کد نمودار فعالیت"
+
+msgid "This shortcode displays the user's activity chart."
+msgstr "این شورت‌کد نمودار فعالیت‌های کاربر را نمایش می‌دهد."
+
+msgid "Chart type (line/bar)"
+msgstr "نوع نمودار (line/bar)"
+
+msgid "Number of days to display (default: 30)"
+msgstr "تعداد روزهای نمایش (پیش‌فرض: 30)" 

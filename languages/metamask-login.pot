@@ -1,0 +1,220 @@
+# Copyright (C) 2023 Your Name
+# This file is distributed under the same license as the MetaMask Login plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaMask Login 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/metamask-login\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-07-01T12:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: metamask-login\n"
+
+#. Plugin Name of the plugin
+msgid "MetaMask Login"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://example.com/metamask-login"
+msgstr ""
+
+#. Description of the plugin
+msgid "Login to WordPress using MetaMask or other Web3 wallets with admin wallet access control. Supports RTL and Persian language."
+msgstr ""
+
+#. Author of the plugin
+msgid "Your Name"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://example.com"
+msgstr ""
+
+#: metamask-login.php:45
+msgid "Login with MetaMask"
+msgstr ""
+
+#: metamask-login.php:46
+msgid "Connecting..."
+msgstr ""
+
+#: metamask-login.php:47
+msgid "Please sign the message..."
+msgstr ""
+
+#: metamask-login.php:48
+msgid "Error"
+msgstr ""
+
+#: metamask-login.php:49
+msgid "No Web3 wallet detected. Please install MetaMask."
+msgstr ""
+
+#: includes/admin-settings.php:13
+msgid "MetaMask Login Settings"
+msgstr ""
+
+#: includes/admin-settings.php:14
+msgid "MetaMask Login"
+msgstr ""
+
+#: includes/admin-settings.php:46
+msgid "Settings Saved"
+msgstr ""
+
+#: includes/admin-settings.php:57
+msgid "Enter Ethereum wallet addresses that should have administrator access. One address per line."
+msgstr ""
+
+#: includes/admin-settings.php:67
+msgid "Admin Wallet Addresses"
+msgstr ""
+
+#: includes/admin-settings.php:76
+msgid "Enter one Ethereum wallet address per line (format: 0x...)"
+msgstr ""
+
+#: includes/admin-settings.php:81
+msgid "Default User Role"
+msgstr ""
+
+#: includes/admin-settings.php:92
+msgid "Role assigned to new users logging in with MetaMask (if not in admin list)"
+msgstr ""
+
+#: includes/admin-settings.php:96
+msgid "Save Settings"
+msgstr ""
+
+#: includes/auth-functions.php:19
+#: includes/auth-functions.php:66
+msgid "Sign this message to authenticate with %s: %s"
+msgstr ""
+
+#: includes/auth-functions.php:54
+msgid "Invalid wallet address format"
+msgstr ""
+
+#: includes/auth-functions.php:63
+msgid "Authentication failed: No nonce found"
+msgstr ""
+
+#: includes/auth-functions.php:70
+msgid "Authentication failed: Nonce mismatch"
+msgstr ""
+
+#: includes/auth-functions.php:92
+msgid "Authentication successful. Redirecting..."
+msgstr ""
+
+#: includes/auth-functions.php:140
+msgid "MetaMask User %s"
+msgstr ""
+
+#: includes/admin-settings.php:17
+msgid "MetaMask Users"
+msgstr ""
+
+#: includes/admin-settings.php:18
+msgid "Users Management"
+msgstr ""
+
+#: includes/admin-settings.php:67
+msgid "Role for user %s updated to %s."
+msgstr ""
+
+#: includes/admin-settings.php:89
+msgid "Manage users who have logged in with MetaMask. You can change their role from this page."
+msgstr ""
+
+#: includes/admin-settings.php:95
+msgid "Username"
+msgstr ""
+
+#: includes/admin-settings.php:96
+msgid "Display Name"
+msgstr ""
+
+#: includes/admin-settings.php:97
+msgid "Wallet Address"
+msgstr ""
+
+#: includes/admin-settings.php:98
+msgid "Current Role"
+msgstr ""
+
+#: includes/admin-settings.php:99
+msgid "Actions"
+msgstr ""
+
+#: includes/admin-settings.php:105
+msgid "No users have logged in with MetaMask yet."
+msgstr ""
+
+#: includes/admin-settings.php:126
+msgid "Change Role"
+msgstr ""
+
+#: includes/auth-functions.php:13
+msgid "Blockchain Dashboard"
+msgstr ""
+
+#: includes/user-dashboard.php:20
+msgid "You must be logged in to view this dashboard."
+msgstr ""
+
+#: includes/user-dashboard.php:33
+msgid "No wallet address found for your account."
+msgstr ""
+
+#: includes/user-dashboard.php:42
+msgid "Welcome, %s"
+msgstr ""
+
+#: includes/user-dashboard.php:45
+msgid "Your Wallet"
+msgstr ""
+
+#: includes/user-dashboard.php:47
+msgid "Wallet Address:"
+msgstr ""
+
+#: includes/user-dashboard.php:53
+msgid "Blockchain Information"
+msgstr ""
+
+#: includes/user-dashboard.php:55
+msgid "Loading blockchain data..."
+msgstr ""
+
+#: includes/user-dashboard.php:59
+msgid "Network:"
+msgstr ""
+
+#: includes/user-dashboard.php:63
+msgid "ETH Balance:"
+msgstr ""
+
+#: includes/user-dashboard.php:68
+msgid "Recent Transactions:"
+msgstr ""
+
+#: includes/user-dashboard.php:93
+msgid "View"
+msgstr ""
+
+#: includes/user-dashboard.php:117
+msgid "Error fetching blockchain data. Please make sure your wallet is connected."
+msgstr ""
+
+#: includes/user-dashboard.php:125
+msgid "MetaMask or ethers.js not detected. Please install MetaMask and refresh the page."
+msgstr ""
+
+#: metamask-login.php:47
+msgid "ورود با دنیای بلاکچین توسط متامسک"
+msgstr "" 

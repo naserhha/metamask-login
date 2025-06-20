@@ -1,0 +1,51 @@
+/**
+ * MetaMask Login RTL Styles
+ * For Persian language and RTL support
+ */
+
+.metamask-login-container {
+    direction: rtl;
+}
+
+#metamask-login-button {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+#metamask-login-button::before {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.metamask-login-status {
+    text-align: right;
+}
+
+.metamask-login-status.error {
+    border-left: none;
+    border-right: 4px solid #d63638;
+    padding-left: 8px;
+    padding-right: 12px;
+}
+
+.metamask-login-status.loading::before {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+/* Admin Settings RTL Styles */
+.form-table th {
+    text-align: right;
+}
+
+.metamask-login-settings-container textarea,
+.metamask-login-settings-container input[type="text"] {
+    text-align: right;
+    direction: rtl;
+}
+
+/* Submit button */
+.wp-core-ui .button-primary {
+    margin-right: 0;
+    margin-left: 10px;
+} 

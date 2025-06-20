@@ -1,0 +1,192 @@
+/**
+ * Blockchain Dashboard CSS
+ * Custom styles for the blockchain dashboard on top of Tailwind CSS
+ */
+
+/* RTL Support */
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl .ml-2 {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+.rtl .ml-3 {
+    margin-left: 0;
+    margin-right: 0.75rem;
+}
+
+.rtl .ml-4 {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.rtl .mr-2 {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+.rtl .mr-3 {
+    margin-right: 0;
+    margin-left: 0.75rem;
+}
+
+.rtl .mr-4 {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.rtl .space-x-2 > * + * {
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+.rtl .space-x-4 > * + * {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+/* Network indicator dot */
+.network-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 8px;
+    position: relative;
+}
+
+.network-dot.ethereum {
+    background-color: #627eea;
+    box-shadow: 0 0 6px #627eea;
+}
+
+.network-dot.testnet {
+    background-color: #ff6b08;
+    box-shadow: 0 0 6px #ff6b08;
+}
+
+.network-dot.polygon {
+    background-color: #8247e5;
+    box-shadow: 0 0 6px #8247e5;
+}
+
+.network-dot.bsc {
+    background-color: #f0b90b;
+    box-shadow: 0 0 6px #f0b90b;
+}
+
+.network-dot.error {
+    background-color: #ef4444;
+    box-shadow: 0 0 6px #ef4444;
+}
+
+.network-dot.unknown {
+    background-color: #9ca3af;
+    box-shadow: 0 0 6px #9ca3af;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3b82f6;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-container {
+    text-align: center;
+    padding: 2rem 0;
+    color: #6b7280;
+}
+
+/* Notifications */
+#notification-container {
+    direction: ltr;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+    max-width: 300px;
+}
+
+.notification {
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.notification.show {
+    opacity: 1;
+}
+
+/* Transaction styles */
+.tx-in-icon svg {
+    color: #10b981;
+}
+
+.tx-out-icon svg {
+    color: #ef4444;
+}
+
+/* NFT Grid responsiveness fixes */
+@media (max-width: 640px) {
+    .nfts-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .nfts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nfts-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .nfts-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Custom Card Styles */
+.dashboard-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Badge and Achievement Animation */
+@keyframes badge-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.wallet-badges > div:hover,
+#achievements-container > div:hover {
+    animation: badge-pulse 0.5s ease;
+} 

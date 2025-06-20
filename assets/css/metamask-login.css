@@ -1,0 +1,170 @@
+/**
+ * MetaMask Login Styles
+ */
+
+.metamask-login-container {
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+#metamask-login-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #f6851b 0%, #e2761b 100%);
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(246, 133, 27, 0.2);
+}
+
+#metamask-login-button:hover {
+    background: linear-gradient(135deg, #e2761b 0%, #d65f17 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(246, 133, 27, 0.25);
+}
+
+#metamask-login-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(246, 133, 27, 0.2);
+}
+
+#metamask-login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(246, 133, 27, 0.4);
+}
+
+.metamask-login-tagline {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.metamask-blockchain-tagline {
+    font-size: 15px;
+    color: #555;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.metamask-login-status {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 20px;
+    font-size: 14px;
+    color: #333333;
+    border-radius: 6px;
+    max-width: 280px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.metamask-login-status.error {
+    color: #d63638;
+    background-color: #ffeeee;
+    border-left: 4px solid #d63638;
+    padding-left: 12px;
+    animation: shake 0.5s ease-in-out;
+}
+
+/* RTL Support */
+.rtl .metamask-login-status.error {
+    border-left: none;
+    border-right: 4px solid #d63638;
+    padding-left: 10px;
+    padding-right: 12px;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+/* Add MetaMask fox animation to button */
+#metamask-login-button::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.6 318.6"><style>.st1,.st2,.st3,.st4,.st5,.st6,.st9{fill:none;stroke:%23fff;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st2,.st3,.st4,.st5,.st6,.st9{fill:%23fff}.st3,.st4,.st5,.st6,.st9{fill:none;stroke:%23fff}.st4,.st5,.st6,.st9{stroke:%23fff}.st5,.st6,.st9{fill:%23fff}.st6,.st9{fill:none}.st9{fill:%23fff}</style><path d="M274.1 35.5l-99.5 73.9L193 65.8z" fill="%23fff"/><path d="M44.4 35.5l98.7 74.6-17.5-44.3zm193.9 171.3l-26.5 40.6 56.7 15.6 16.3-55.3zm-204.4.9L50.1 263l56.7-15.6-26.5-40.6z" fill="%23fff"/><path d="M103.6 138.2l-15.8 23.9 56.3 2.5-2-60.5zm111.3 0l-39-34.8-1.3 61.2 56.2-2.5z" fill="%23fff"/><path d="M193.1 207.8l-26.8-23.1-22.1 22.7 8.9 45.5 10.2.6zm-67.5 0l22.1-22.7-26.8 23.1 17.9 45.7 10.2-.6z" fill="%23fff"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 12px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.rtl #metamask-login-button::before {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+#metamask-login-button:hover::before {
+    transform: scale(1.1);
+}
+
+/* Loading animation */
+.metamask-login-status.loading::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f6851b;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.rtl .metamask-login-status.loading::before {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Make sure the button is visible in dark mode themes */
+.wp-core-ui .button.button-primary#metamask-login-button {
+    color: #ffffff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    #metamask-login-button {
+        min-width: unset;
+        width: 100%;
+        max-width: 250px;
+        padding: 10px 20px;
+    }
+    
+    .metamask-login-status {
+        font-size: 13px;
+    }
+}
+
+/* Admin Settings Styles */
+.metamask-login-settings-container textarea {
+    font-family: monospace;
+    width: 100%;
+    max-width: 600px;
+} 

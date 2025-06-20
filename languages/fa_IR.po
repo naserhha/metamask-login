@@ -1,0 +1,183 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaMask Login\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-01 12:00+0000\n"
+"PO-Revision-Date: 2023-06-01 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Generator: WP-CLI 2.8.0\n"
+"X-Domain: metamask-login\n"
+
+#: includes/wallet-connect.php:40
+msgid "Connect Blockchain Wallet"
+msgstr "اتصال کیف پول بلاکچینی"
+
+#: includes/wallet-connect.php:44
+msgid "Connect your MetaMask wallet to your WordPress account. This will allow you to login with your wallet in the future."
+msgstr "کیف پول متامسک خود را به حساب وردپرس خود متصل کنید. این به شما امکان می‌دهد در آینده با کیف پول خود وارد شوید."
+
+#: includes/wallet-connect.php:54
+msgid "Your wallet is already connected:"
+msgstr "کیف پول شما قبلاً متصل شده است:"
+
+#: includes/wallet-connect.php:61
+msgid "Disconnect Wallet"
+msgstr "قطع ارتباط کیف پول"
+
+#: includes/wallet-connect.php:79
+msgid "Security check failed. Please try again."
+msgstr "بررسی امنیتی ناموفق بود. لطفا دوباره تلاش کنید."
+
+#: includes/wallet-connect.php:84
+msgid "You must be logged in to disconnect a wallet."
+msgstr "برای قطع اتصال کیف پول باید وارد شوید."
+
+#: includes/wallet-connect.php:101
+msgid "Your wallet has been disconnected successfully."
+msgstr "کیف پول شما با موفقیت قطع ارتباط شد."
+
+#: includes/wallet-connect.php:129
+msgid "Connecting to MetaMask..."
+msgstr "در حال اتصال به متامسک..."
+
+#: includes/wallet-connect.php:130
+msgid "Please sign the message in MetaMask..."
+msgstr "لطفاً پیام را در متامسک امضا کنید..."
+
+#: includes/wallet-connect.php:131
+msgid "Error"
+msgstr "خطا"
+
+#: includes/wallet-connect.php:132
+msgid "No Web3 wallet detected. Please install MetaMask."
+msgstr "هیچ کیف پول وب3 شناسایی نشد. لطفاً متامسک را نصب کنید."
+
+#: includes/wallet-connect.php:149
+msgid "You must be logged in to connect a wallet."
+msgstr "برای اتصال کیف پول باید وارد شوید."
+
+#: includes/wallet-connect.php:158
+msgid "Invalid wallet address format."
+msgstr "فرمت آدرس کیف پول نامعتبر است."
+
+#: includes/wallet-connect.php:173
+msgid "This wallet is already linked to another account (%s)."
+msgstr "این کیف پول قبلاً به حساب دیگری (%s) متصل شده است."
+
+#: includes/wallet-connect.php:183
+msgid "I confirm that I am linking this wallet (%s) to my WordPress account (%s).\nTimestamp: %s\nNonce: %s"
+msgstr "من تأیید می‌کنم که این کیف پول (%s) را به حساب وردپرس خود (%s) متصل می‌کنم.\nزمان: %s\nکد یکبار مصرف: %s"
+
+#: includes/wallet-connect.php:235
+msgid "Invalid nonce. Please try again."
+msgstr "کد یکبار مصرف نامعتبر است. لطفا دوباره تلاش کنید."
+
+#: includes/wallet-connect.php:239
+msgid "Wallet address mismatch. Please try again."
+msgstr "عدم تطابق آدرس کیف پول. لطفا دوباره تلاش کنید."
+
+#: includes/wallet-connect.php:258
+msgid "Wallet successfully connected to your account."
+msgstr "کیف پول با موفقیت به حساب شما متصل شد."
+
+#: includes/auth-functions.php:125
+msgid "This wallet is not linked to any account. Please log in via email first and connect your wallet."
+msgstr "این کیف پول به هیچ حسابی متصل نیست. لطفا ابتدا از طریق ایمیل وارد شوید و کیف پول خود را متصل کنید."
+
+#: includes/admin-settings.php:119
+msgid "Registration Method"
+msgstr "روش ثبت نام"
+
+#: includes/admin-settings.php:123
+msgid "Allow new users to register with MetaMask"
+msgstr "به کاربران جدید اجازه دهید با متامسک ثبت نام کنند"
+
+#: includes/admin-settings.php:126
+msgid "If unchecked, users must have an existing WordPress account and link their wallet to it before they can login with MetaMask."
+msgstr "اگر علامت نخورد، کاربران باید یک حساب وردپرس موجود داشته باشند و قبل از ورود با متامسک، کیف پول خود را به آن متصل کنند."
+
+#: templates/user-profile.php:31
+msgid "Welcome, %s"
+msgstr "خوش آمدید، %s"
+
+#: templates/user-profile.php:35
+msgid "Username:"
+msgstr "نام کاربری:"
+
+#: templates/user-profile.php:36
+msgid "Email:"
+msgstr "ایمیل:"
+
+#: templates/user-profile.php:40
+msgid "Blockchain Wallet"
+msgstr "کیف پول بلاکچین"
+
+#: includes/wallet-connect.php:298
+msgid "Blockchain Wallet Information"
+msgstr "اطلاعات کیف پول بلاکچین"
+
+#: includes/wallet-connect.php:302
+msgid "Connected Wallet"
+msgstr "کیف پول متصل شده"
+
+#: includes/wallet-connect.php:308
+msgid "Connected on: %s"
+msgstr "متصل شده در: %s"
+
+#: includes/wallet-connect.php:311
+msgid "No wallet connected"
+msgstr "کیف پولی متصل نیست"
+
+#: includes/wallet-connect.php:316
+msgid "Remove Wallet"
+msgstr "حذف کیف پول"
+
+#: includes/wallet-connect.php:346
+msgid "Wallet has been removed."
+msgstr "کیف پول حذف شده است."
+
+#: includes/wallet-connect.php:19
+msgid "MetaMask Wallet Connection"
+msgstr "اتصال کیف پول متامسک"
+
+#: includes/wallet-connect.php:21
+msgid "Connect Your Wallet"
+msgstr "کیف پول خود را متصل کنید"
+
+#: includes/wallet-connect.php:24
+msgid "Connect your MetaMask wallet to your WordPress account to enable secure blockchain login."
+msgstr "کیف پول متامسک خود را به حساب وردپرس خود متصل کنید تا امکان ورود امن با بلاکچین فراهم شود."
+
+#: includes/wallet-connect.php:34
+msgid "Connecting your wallet allows you to securely log in to this site using MetaMask."
+msgstr "اتصال کیف پول به شما امکان می‌دهد به صورت امن با استفاده از متامسک وارد این سایت شوید."
+
+#: includes/admin-settings.php:196
+msgid "Manage users who have logged in with MetaMask or connected their wallet. You can change their role from this page."
+msgstr "مدیریت کاربرانی که با متامسک وارد شده‌اند یا کیف پول خود را متصل کرده‌اند. می‌توانید نقش آنها را از این صفحه تغییر دهید."
+
+#: includes/admin-settings.php:204
+msgid "Email"
+msgstr "ایمیل"
+
+#: includes/admin-settings.php:206
+msgid "Connection Type"
+msgstr "نوع اتصال"
+
+#: includes/admin-settings.php:216
+msgid "No users have connected a wallet yet."
+msgstr "هنوز هیچ کاربری کیف پول خود را متصل نکرده است."
+
+#: includes/admin-settings.php:225
+msgid "Linked to Existing Account"
+msgstr "متصل به حساب موجود"
+
+#: includes/admin-settings.php:227
+msgid "MetaMask Registration"
+msgstr "ثبت‌نام با متامسک" 

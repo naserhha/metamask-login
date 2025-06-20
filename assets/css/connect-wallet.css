@@ -1,0 +1,363 @@
+/**
+ * Styles for the Connect Wallet feature
+ */
+
+.connect-wallet-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.connect-wallet-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.connect-wallet-container p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#connect-wallet-button {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#connect-wallet-button:hover {
+    background-color: #0052cc;
+}
+
+#connect-wallet-button:active {
+    background-color: #003d99;
+}
+
+#connect-wallet-button:disabled {
+    background-color: #99bfff;
+    cursor: not-allowed;
+}
+
+#connect-wallet-status {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#connect-wallet-status.error {
+    background-color: #ffebee;
+    color: #d32f2f;
+    border-left: 4px solid #d32f2f;
+}
+
+#connect-wallet-status.loading {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    border-left: 4px solid #1976d2;
+}
+
+#connect-wallet-status.success {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    border-left: 4px solid #388e3c;
+}
+
+.wallet-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.wallet-address-display {
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    word-break: break-all;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.unlink-wallet-button {
+    background-color: #f5f5f5;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.unlink-wallet-button:hover {
+    background-color: #ffebee;
+}
+
+/* RTL Support */
+.rtl .connect-wallet-container {
+    text-align: right;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .connect-wallet-container {
+        padding: 15px;
+    }
+    
+    #connect-wallet-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Add these styles for the disconnect functionality */
+
+/* Success message styles */
+.wallet-message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Disconnect wallet button */
+.unlink-wallet-button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.unlink-wallet-button:hover {
+    background-color: #c9302c;
+}
+
+#disconnect-wallet-container {
+    margin-top: 15px;
+}
+
+#disconnect-wallet-status {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#disconnect-wallet-status.loading {
+    color: #31708f;
+}
+
+#disconnect-wallet-status.error {
+    color: #a94442;
+}
+
+#disconnect-wallet-status.success {
+    color: #3c763d;
+}
+
+/* Global notice styles */
+.metamask-notice {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 40px 15px 15px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 9999;
+    max-width: 400px;
+}
+
+.metamask-notice.success {
+    background-color: #dff0d8;
+    border-left: 4px solid #5cb85c;
+}
+
+.metamask-notice .notice-dismiss {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.metamask-notice .notice-dismiss:before {
+    content: "×";
+    font-size: 20px;
+    line-height: 20px;
+    color: #666;
+}
+
+/* Additional improvements for wallet address display */
+.wallet-address-display {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    word-break: break-all;
+    margin-bottom: 10px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .metamask-notice {
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+    
+    .wallet-address-display {
+        font-size: 12px;
+    }
+}
+
+/* RTL support */
+.rtl .metamask-notice {
+    right: auto;
+    left: 20px;
+}
+
+.rtl .metamask-notice .notice-dismiss {
+    right: auto;
+    left: 10px;
+}
+
+/* Focus and accessibility improvements */
+.unlink-wallet-button:focus {
+    outline: 2px solid #007cba;
+    outline-offset: 2px;
+}
+
+.connect-wallet-container button:focus {
+    outline: 2px solid #007cba;
+    outline-offset: 2px;
+}
+
+/* Wallet Connection Messages */
+#wallet-connection-messages {
+    margin-bottom: 15px;
+}
+
+/* Improve animations and transitions */
+.connect-wallet-container * {
+    transition: all 0.3s ease;
+}
+
+/* Smooth fade animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Loading indicator for connect and disconnect */
+.loading-indicator {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Show loading indicator for status elements */
+#connect-wallet-status.loading::before,
+#disconnect-wallet-status.loading::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+/* Style the success messages consistently */
+.wallet-message.success,
+#connect-wallet-status.success,
+#disconnect-wallet-status.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Style the cancel button for signing */
+#cancel-signing {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    color: #666;
+}
+
+#cancel-signing:hover {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+/* Improve wallet address display */
+.wallet-address-display {
+    position: relative;
+    padding-right: 30px;
+}
+
+.wallet-address-display::after {
+    content: "✓";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #28a745;
+    font-weight: bold;
+} 

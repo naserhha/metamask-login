@@ -1,0 +1,626 @@
+/**
+ * MetaMask Dashboard CSS
+ * Modern, responsive styles for the Web3 dashboard
+ * Includes RTL support
+ */
+
+/* Dashboard Container */
+.metamask-dashboard {
+    --primary-color: #1e88e5;
+    --secondary-color: #4a90e2;
+    --accent-color: #3498db;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --error-color: #f44336;
+    --text-color: #333;
+    --text-light: #666;
+    --background-color: #fff;
+    --card-bg: #f8f9fa;
+    --border-color: #e0e0e0;
+    --border-radius: 12px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--text-color);
+    direction: ltr;
+}
+
+/* RTL Support */
+.rtl .metamask-dashboard {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.wallet-info {
+    display: flex;
+    align-items: center;
+}
+
+.metamask-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.rtl .metamask-logo {
+    margin-right: 0;
+    margin-left: 12px;
+}
+
+.wallet-address-container {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.rtl .wallet-address-container {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.wallet-address-label {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-right: 8px;
+}
+
+.rtl .wallet-address-label {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+#wallet-address {
+    background-color: var(--card-bg);
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+#copy-address {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 8px;
+    color: var(--primary-color);
+}
+
+.rtl #copy-address {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+.network-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+.network-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.rtl .network-dot {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.network-dot.ethereum {
+    background-color: #627EEA;
+}
+
+.network-dot.polygon {
+    background-color: #8247E5;
+}
+
+.network-dot.bsc {
+    background-color: #F3BA2F;
+}
+
+.network-dot.testnet {
+    background-color: #FF9800;
+}
+
+.network-dot.unknown {
+    background-color: #9E9E9E;
+}
+
+.network-dot.error {
+    background-color: var(--error-color);
+}
+
+#network-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Tabs Navigation */
+.tabs-navigation {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+    scrollbar-width: none; /* Firefox */
+}
+
+.tabs-navigation::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+.tab-button {
+    padding: 12px 20px;
+    margin-right: 8px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: var(--text-light);
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.rtl .tab-button {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.tab-button:hover {
+    color: var(--primary-color);
+}
+
+.tab-button.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px 3px 0 0;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Card Containers */
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: var(--shadow);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Balance Display */
+.balance-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    box-shadow: var(--shadow);
+    margin-bottom: 16px;
+}
+
+.main-balance {
+    background-color: #f5f9ff;
+    border-left: 4px solid var(--primary-color);
+}
+
+.rtl .main-balance {
+    border-left: none;
+    border-right: 4px solid var(--primary-color);
+}
+
+.balance-icon {
+    margin-right: 16px;
+}
+
+.rtl .balance-icon {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.balance-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-label {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.balance-value {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Tokens Grid */
+.tokens-grid, .nfts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.token-item, .nft-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.token-item:hover, .nft-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.token-icon, .nft-image {
+    margin-right: 16px;
+}
+
+.rtl .token-icon, .rtl .nft-image {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.token-icon img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.token-details, .nft-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.token-name, .nft-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.token-balance, .nft-collection {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* NFT Items */
+.nft-item {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nft-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rtl .nft-image {
+    margin-left: 0;
+}
+
+.nft-image img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.nft-item:hover .nft-image img {
+    transform: scale(1.05);
+}
+
+/* Transactions */
+.transactions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: var(--border-radius);
+    background-color: var(--background-color);
+    box-shadow: var(--shadow);
+}
+
+.tx-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.rtl .tx-icon {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+.in-icon {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--success-color);
+}
+
+.out-icon {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: var(--warning-color);
+}
+
+.tx-details {
+    flex: 1;
+}
+
+.tx-primary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.tx-type {
+    font-weight: 500;
+}
+
+.tx-secondary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.tx-address {
+    font-family: monospace;
+}
+
+.tx-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.tx-link:hover {
+    text-decoration: underline;
+}
+
+/* Loading State */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Empty and Error States */
+.empty-state, .error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.empty-state svg, .error-message svg {
+    margin-bottom: 16px;
+    color: #9e9e9e;
+}
+
+.error-message svg {
+    color: var(--error-color);
+}
+
+.empty-state p, .error-message p {
+    font-size: 16px;
+    max-width: 300px;
+}
+
+/* Notification System */
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    max-width: 300px;
+}
+
+.rtl #notification-container {
+    right: auto;
+    left: 20px;
+}
+
+.notification {
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    transform: translateX(110%);
+    transition: transform 0.3s ease;
+}
+
+.rtl .notification {
+    transform: translateX(-110%);
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+.notification.info {
+    background-color: #e3f2fd;
+    border-left: 4px solid var(--primary-color);
+    color: #0c539a;
+}
+
+.notification.success {
+    background-color: #e8f5e9;
+    border-left: 4px solid var(--success-color);
+    color: #2e7d32;
+}
+
+.notification.error {
+    background-color: #ffebee;
+    border-left: 4px solid var(--error-color);
+    color: #c62828;
+}
+
+.rtl .notification.info {
+    border-left: none;
+    border-right: 4px solid var(--primary-color);
+}
+
+.rtl .notification.success {
+    border-left: none;
+    border-right: 4px solid var(--success-color);
+}
+
+.rtl .notification.error {
+    border-left: none;
+    border-right: 4px solid var(--error-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .wallet-info {
+        margin-bottom: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .wallet-address-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    
+    .rtl .wallet-address-container {
+        margin-left: 0;
+    }
+    
+    #wallet-address {
+        width: calc(100% - 24px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    #copy-address {
+        position: absolute;
+        right: 8px;
+    }
+    
+    .rtl #copy-address {
+        right: auto;
+        left: 8px;
+    }
+    
+    .network-container {
+        align-self: flex-start;
+    }
+    
+    .tokens-grid, .nfts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    
+    .tab-button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tokens-grid, .nfts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-button {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    .card-title {
+        font-size: 16px;
+    }
+    
+    .balance-value {
+        font-size: 16px;
+    }
+} 
