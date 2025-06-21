@@ -76,4 +76,17 @@ For support and feature requests, please open an issue on the plugin's GitHub re
 ## Changelog
 
 ### 1.0.0
-- Initial release 
+- Initial release
+
+## Credits
+Developed by [Mohammad Nasser Haji Hashemabad](https://mohammadnasser.com) 
+* Author: محمد ناصر حاجی هاشم آباد Mohammad Nasser Haji Hashemabad
+* Email: info@mohammadnasser.com
+* Website: mohammadnasser.com
+  
+## Links
+
+- [LinkedIn](https://ir.linkedin.com/in/nasserhaji)
+- [GitHub](https://github.com/nasserhaji)
+- [Website](https://mohammadnasser.com/)
+- [Product Quiz Repository](https://github.com/nasserhaji/metamask-login)
