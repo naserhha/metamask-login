@@ -93,7 +93,7 @@ Developed by [Mohammad Nasser Haji Hashemabad](https://mohammadnasser.com)
   
 ## Links
 
-- [LinkedIn](https://ir.linkedin.com/in/nasserhaji)
-- [GitHub](https://github.com/nasserhaji)
+- [LinkedIn](https://ir.linkedin.com/in/naserhha)
+- [GitHub](https://github.com/naserhha)
 - [Website](https://mohammadnasser.com/)
-- [Product Quiz Repository](https://github.com/nasserhaji/metamask-login)
+- [Product Quiz Repository](https://github.com/naserhha/metamask-login)
